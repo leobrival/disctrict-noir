@@ -1,9 +1,9 @@
-import { Head } from '@inertiajs/react'
+import { Head, Link } from '@inertiajs/react'
 
 export default function Home() {
   return (
     <>
-      <Head title="Homepage" />
+      <Head title="District Noir - AdonisJS" />
 
       <div className="fixed xl:absolute left-8 right-8 top-0 bottom-0 xl:inset-0 max-w-screen-xl mx-auto before:content-[''] before:[background:repeating-linear-gradient(0deg,var(--sand-5)_0_4px,transparent_0_8px)] before:absolute before:top-0 before:left-0 before:h-full before:w-px after:content-[''] after:[background:repeating-linear-gradient(0deg,var(--sand-5)_0_4px,transparent_0_8px)] after:absolute after:top-0 after:right-0 after:h-full after:w-px"></div>
 
@@ -19,6 +19,17 @@ export default function Home() {
               />
             </svg>
           </a>
+          
+          {/* District Noir game link */}
+          <div className="mt-4">
+            <Link 
+              href="/game/setup" 
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 hover:scale-105"
+            >
+              <span className="text-xl">🎴</span>
+              <span>Jouer à District Noir</span>
+            </Link>
+          </div>
         </div>
 
         {/* Bento with documentation, Adocasts, packages and Discord */}
