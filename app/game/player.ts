@@ -8,8 +8,8 @@ export class Player {
   public collectedCards: Card[] = []
   public hasCollectedThisRound: boolean = false
 
-  constructor() {
-    this.id = randomUUID()
+  constructor(id?: string) {
+    this.id = id || randomUUID()
   }
 
   public addToHand(cards: Card[]): void {
